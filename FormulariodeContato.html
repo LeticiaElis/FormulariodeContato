@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Formulário de contato</title>
+  </head>
+  <body>
+    <legend>
+      <fieldset>
+        <h3>ENTRE EM CONTATO CONOSCO</h3>
+        <hr />
+        <br />
+        <div>
+          <label for="assunto"><strong>Assunto:</strong></label>
+          <select name="assunto" id="assunto">
+            <option value="suporte">Suporte</option>
+            <option value="sugestao">Sugestão</option>
+            <option value="reclamacao">Reclamação</option>
+          </select>
+        </div>
+        <br />
+
+        <div>
+          <label for="name"> <strong> Nome completo: </strong></label>
+          <input
+            type="text"
+            id="name"
+            autocomplete="off"
+            required
+            placeholder="Seu Nome"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="email"><strong>Email:</strong></label>
+          <input
+            type="email"
+            id="email"
+            autocomplete="off"
+            required
+            placeholder="email@seudominio.com"
+          />
+        </div>
+        <br />
+        <div>
+          <label for="mensagem"><strong> Digite sua mensagem: </strong></label>
+          <br />
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" id="novidades" required />
+          <label for="novidades">Aceito receber novidades por email</label>
+          <br />
+        </div>
+        <br />
+        <div>
+          <input type="submit" value="Enviar" />
+        </div>
+      </fieldset>
+    </legend>
+  </body>
+</html>
